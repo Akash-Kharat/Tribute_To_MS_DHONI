@@ -1,0 +1,233 @@
+*{
+    text-align: center;
+    font-family: cursive;
+    forced-color-adjust: auto;
+    /* border: 1px solid; */
+   
+}
+
+body{
+    
+    background-color: skyblue;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+h1{
+    
+    background-color: skyblue ,0.5;
+    font-size: 50px;
+    border: 2px solid lightblue;
+    border-radius: 30in;
+}
+
+p{
+    font-size: 30px;
+    margin: 50px;
+    text-align: justify;
+    box-sizing: border-box;
+    text-shadow: whitesmoke ,0.7;
+}
+.parent {
+    /* border:1px solid black; */
+    background-color: hsla(34, 78%, 91%, 0.5);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.div1 { 
+    padding: 20px;
+    grid-area: 1 / 1 / 2 / 2; }
+.div2 { 
+    padding: 20px;
+    grid-area: 1 / 2 / 2 / 3; }
+hr{
+  background-color:black;
+    border: 5px solid black;
+}
+
+.top-container {
+    background-color: rgba(241,241,241, 0.5) ;
+    /* padding: 30px; */
+    text-align: center;
+    /* opacity: 50%; */
+  }
+  
+.header {
+    /* padding: 10px 16px; */
+    border-radius: 30px; 
+    color: darkcyan;
+     background-color: #555; 
+  }
+  
+.content {
+    padding: 16px;
+  }
+  
+.sticky {
+    font-size: 25px;
+    color: black;
+    position: fixed;
+    height: 40px;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-image: url(./assets/pattern.jpg);
+    border-radius: 0;
+    
+  }
+  
+.sticky + .content {
+    padding-top: 0;
+  }
+  .fa {
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+footer{
+    padding-bottom: 0px;
+    background-color: gray;
+}  
+/* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+.Back{
+  left: 0;
+  border-radius: 0px 4px 4px 0px;
+}
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #3B5998;
+  font-size: 20px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
